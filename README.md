@@ -1,5 +1,17 @@
 # Getting-and-Cleaning-Data-Course-project
 
+# Data setup
+The code "run_analysis.R" has to be put in the directory where the data from the zip file on the course website has been extracted. The direcory structure should be similar to :
+./ (Root) - contains files like "activity_labels.txt", "features.txt", "features_info.txt", "README.txt".
+./ test - this contains the files "subject_test.txt", "X_test.txt", "y_test.txt" as well as another directory "Inertial Signals" which is not used
+./ train - this contains the files "subject_train.txt", "X_train.txt", "y_train.txt" as well as another directory "Inertial Signals" which is not used
+
+
+# Code explanation
+## The code consists of 5 parts, corresponding to the 5 questions.
+## Below is a description of each part
+
+
 # Part 1
 ## Merges the training and the test sets to create one data set
 ## This part was done in 3 steps :
@@ -58,7 +70,6 @@ STEP 1 : Create lables for measurements
 STEP 2 : change names of measurements
 * rename variables in merged data using setname function
 * remove intermediate files using function rm
-
 
 
 # Part 5
