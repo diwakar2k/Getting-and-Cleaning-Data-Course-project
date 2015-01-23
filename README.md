@@ -37,7 +37,7 @@ STEP 2 : Extract relevant measurement from combined_data
 
 # Part 3
 ## Uses descriptive activity names to name the activities in the data set
-## This part was done using 2 steps
+## This part was done in 2 steps
 STEP 1 : Identify correct activity description
 * read in activity_labels data using read.delim function
 * change variable names in activity_labels data using setnames function
@@ -51,9 +51,10 @@ STEP 2 : Merge Activity_name into shortlist_data
 
 # Part 4
 ## Appropriately labels the data set with descriptive variable names
-## This part was done using 2 steps
+## This part was done in 2 steps
 STEP 1 : Create lables for measurements
 * create variable names from the provided measure description using functions apply, ifelse, grepl and paste
+
 STEP 2 : change names of measurements
 * rename variables in merged data using setname function
 * remove intermediate files using function rm
@@ -62,8 +63,9 @@ STEP 2 : change names of measurements
 
 # Part 5
 ## From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
-## This part was done using 2 steps
+## This part was done in 2 steps
 STEP 1 : Create data summary
 * summarize data by activity and subject using function ddply (library plyr)
+
 STEP 2 : Save as txt file
 * save data as txt file using function write.table
