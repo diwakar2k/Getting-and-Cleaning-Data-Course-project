@@ -28,6 +28,7 @@ STEP 1 : Identify required measurements column names
 * change variable names in features_info data using setnames function
 * extract measurement on mean and standard deviation using grepl function (look for exact presence of "-mean()" or "-std()"
 * remove intermediate files using rm function
+
 STEP 2 : Extract relevant measurement from combined_data
 * extract relevant columns from the combined data using apply & substring function (the exact location for substring is provided by the field measurement_id for the identified measurements)
 * add columns for subject & Activity to shortlist_data using cbind function
@@ -41,6 +42,7 @@ STEP 1 : Identify correct activity description
 * read in activity_labels data using read.delim function
 * change variable names in activity_labels data using setnames function
 * change variable names in measurement using setnames function
+
 STEP 2 : Merge Activity_name into shortlist_data
 * merge datasets using merge function
 * drop Activity_id column
