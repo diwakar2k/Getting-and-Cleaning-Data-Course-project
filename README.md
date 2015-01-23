@@ -3,9 +3,9 @@
 # Data setup
 * The code "run_analysis.R" has to be put in the directory where the data from the zip file on the course website has been extracted. 
 * The direcory structure should be similar to :
--* ./ (Root) - contains files like "activity_labels.txt", "features.txt", "features_info.txt", "README.txt".
--* ./ test - this contains the files "subject_test.txt", "X_test.txt", "y_test.txt" as well as another directory "Inertial Signals" which is not used
--* ./ train - this contains the files "subject_train.txt", "X_train.txt", "y_train.txt" as well as another directory "Inertial Signals" which is not used
+./ (Root) - contains files like "activity_labels.txt", "features.txt", "features_info.txt", "README.txt".
+./ test - this contains the files "subject_test.txt", "X_test.txt", "y_test.txt" as well as another directory "Inertial Signals" which is not used
+./ train - this contains the files "subject_train.txt", "X_train.txt", "y_train.txt" as well as another directory "Inertial Signals" which is not used
 
 
 # Code explanation
