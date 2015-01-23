@@ -8,11 +8,13 @@ STEP 1 : Prepare train data
 * change variable names in subject_train, X_train, y_train data using setnames function
 * prepare train data using cbind function
 * remove intermediate files using rm function
+
 STEP 2 : Prepare test data
 * read in subject_test, X_test, y_test data using fread function (every row of X_test was read in as a single text string)
 * change variable names in subject_test, X_test, y_test data using setnames function
 * prepare test data usinf cbind function
 * remove intermediate files using rm function
+
 STEP 3 : Combine train & test data
 * combine train and test data usinf rbind function
 * remove intermediate files using rm function
