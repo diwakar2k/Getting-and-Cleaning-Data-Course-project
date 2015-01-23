@@ -53,31 +53,17 @@ STEP 2 : Merge Activity_name into shortlist_data
 ## Appropriately labels the data set with descriptive variable names
 ## This part was done using 2 steps
 STEP 1 : Create lables for measurements
-shortlist_features$measure_label<-apply(shortlist_features,1,function(x) ifelse(grepl("-mean()",x["measure_desc"],fixed = TRUE),paste("Mean of",gsub("-mean()","",x["measure_desc"],fixed = TRUE)),paste("Std dev of",gsub("-std()","",x["measure_desc"],fixed = TRUE))))
+* create variable names from the provided measure description using functions apply, ifelse, grepl and paste
 STEP 2 : change names of measurements
-setnames(shortlist_data,as.character(seq(1:dim(shortlist_features)[1])),shortlist_features$measure_label)
-setnames(shortlist_data,"combined_data$subject","subject_id")
-# remove intermediate files
-rm(shortlist_features)
+* rename variables in merged data using setname function
+* remove intermediate files using function rm
 
 
 
-# *******************
-# part 5
-# From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
-# *******************
-
-# STEP 1 : Create summary by activity and subject
-library(plyr)
-summary<-ddply(shortlist_data,c("Activity_name","subject_id"),numcolwise(mean))
-
-
-# STEP 2 : Save as txt file
-write.table(summary,"final.txt",row.names=FALSE)
-
-
-
-# *******************
-# END
-# *******************
-
+# Part 5
+## From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+## This part was done using 2 steps
+STEP 1 : Create data summary
+* summarize data by activity and subject using function ddply (library plyr)
+STEP 2 : Save as txt file
+* save data as txt file using function write.table
