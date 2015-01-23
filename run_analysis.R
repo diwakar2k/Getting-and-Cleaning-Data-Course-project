@@ -18,7 +18,7 @@ setnames(subject_train,"V1","subject")
 setnames(X_train,"V1","data_set")
 setnames(y_train,"V1","Activity")
 
-# cbind test data
+# cbind train data
 training_data<-cbind.data.frame(subject_train,X_train,y_train)
 
 # remove intermediate files
